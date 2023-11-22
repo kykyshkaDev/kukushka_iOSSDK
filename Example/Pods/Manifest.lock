@@ -1,0 +1,16 @@
+PODS:
+  - Kukushka_iOSSDK (0.1.0)
+
+DEPENDENCIES:
+  - Kukushka_iOSSDK (from `../`)
+
+EXTERNAL SOURCES:
+  Kukushka_iOSSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kukushka_iOSSDK: c58c2ef35c9c321238b7dcffa560be61cfe70c9e
+
+PODFILE CHECKSUM: 139fe51b72e6c16b94125db1885fdc1ed5c0da4d
+
+COCOAPODS: 1.12.1

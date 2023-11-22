@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AF0D6FA95C3B83E43565E6A117C8FC4 /* Pods-Kukushka_iOSSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D3CCF82F43319A14471EA7C856BE7 /* Pods-Kukushka_iOSSDK_Tests-dummy.m */; };
+		247934A923FD7051A87F195DEA8F2DA0 /* Pods-Kukushka_iOSSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFF7E9260200AAB906AEEAB66B9796F0 /* Pods-Kukushka_iOSSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28BBA10B4A65B464F97D37A509240002 /* KukushkaSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA5C4F6C06105830AF9FC8402C5B48E /* KukushkaSDK.swift */; };
+		33FF37CD489898FFC84B3EC35B3E0069 /* Pods-Kukushka_iOSSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 919DCC3CB437D5CACCB6FECF6048AE19 /* Pods-Kukushka_iOSSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373A496377100646E8A17AA36170AF3B /* Pods-Kukushka_iOSSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 949949C517FE5C11418AC51E5EB715F7 /* Pods-Kukushka_iOSSDK_Example-dummy.m */; };
+		3E4B84BDFA9D9CE02CCF41F4CFA0E7BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6D30982F3A244CB16F050A3319D52997 /* Kukushka_iOSSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9CC28DC3966160F5F8E85F5A037A8 /* Kukushka_iOSSDK-dummy.m */; };
+		760764E5655632964CE0C8A9F3FA2C50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8CDC086DA0E2B67EA97610C5E3978461 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CCB0AA7BB9DE5B2AB7EA3673D8556827 /* Kukushka_iOSSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CD1666B790DE98B52F9D3CF36670DF /* Kukushka_iOSSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC61F9882AF4516C00F13101 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61F9872AF4516C00F13101 /* Constants.swift */; };
+		DC61F98A2AF4618800F13101 /* JSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61F9892AF4618800F13101 /* JSHandler.swift */; };
+		DC61F98D2AFBE16100F13101 /* SDKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61F98C2AFBE16100F13101 /* SDKError.swift */; };
+		DC61F98F2AFBE6F200F13101 /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61F98E2AFBE6F200F13101 /* SurveyController.swift */; };
+		DC61F9922AFC17C000F13101 /* JSResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61F9912AFC17C000F13101 /* JSResponse.swift */; };
+		DC61F9942AFC19E600F13101 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61F9932AFC19E600F13101 /* UIViewController+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A0D2655230F83D9DE1846681E325862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783F1AF3FC74B8FE223EF247DAB3D6EB;
+			remoteInfo = "Pods-Kukushka_iOSSDK_Example";
+		};
+		81E7AE45DD78FEB2F21EC21B5FD4AE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2F724DF1A8774476BE7C2DF34DCEE55;
+			remoteInfo = Kukushka_iOSSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2410C19A72DB82E054A0F4C805C12E69 /* Pods-Kukushka_iOSSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kukushka_iOSSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2ADC05DEBA839A387F683599583D412B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2E41D8CFEC1A816BBC625A0A64C4FAFC /* Pods-Kukushka_iOSSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kukushka_iOSSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		31A8F9E5C2CC0507BFA682FE497AAB75 /* Pods-Kukushka_iOSSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kukushka_iOSSDK_Example-Info.plist"; sourceTree = "<group>"; };
+		3FA5C4F6C06105830AF9FC8402C5B48E /* KukushkaSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KukushkaSDK.swift; sourceTree = "<group>"; };
+		45CD1666B790DE98B52F9D3CF36670DF /* Kukushka_iOSSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kukushka_iOSSDK-umbrella.h"; sourceTree = "<group>"; };
+		578DFC1BBDE4A1577EAE3131AF7AE7C1 /* Kukushka_iOSSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kukushka_iOSSDK.modulemap; sourceTree = "<group>"; };
+		5846E273841A191FAF9747364F62277C /* Pods-Kukushka_iOSSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kukushka_iOSSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A7D942C06DCBB5B9A76D8FCE0BD5ACE /* Kukushka_iOSSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Kukushka_iOSSDK.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		71DDC15CCA34297A107C88C1B74F81E4 /* Pods-Kukushka_iOSSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kukushka_iOSSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8A0DAF79C517D28C6D909214464BC35C /* Pods-Kukushka_iOSSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kukushka_iOSSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8ED9CC28DC3966160F5F8E85F5A037A8 /* Kukushka_iOSSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kukushka_iOSSDK-dummy.m"; sourceTree = "<group>"; };
+		9085CB1EBA217AB7AC82297E0EE6201D /* Pods-Kukushka_iOSSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kukushka_iOSSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		919DCC3CB437D5CACCB6FECF6048AE19 /* Pods-Kukushka_iOSSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kukushka_iOSSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		932B99DF0005B5903A2189C40FCFE691 /* Pods-Kukushka_iOSSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Kukushka_iOSSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		93848EE1123472ACEB952764343A03A6 /* Kukushka_iOSSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kukushka_iOSSDK-Info.plist"; sourceTree = "<group>"; };
+		938E8B0F6EECC9C5406172098E02D23A /* Pods-Kukushka_iOSSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Kukushka_iOSSDK_Example.modulemap"; sourceTree = "<group>"; };
+		93BF95F06371022FD6EFA00FC7144318 /* Kukushka_iOSSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kukushka_iOSSDK.debug.xcconfig; sourceTree = "<group>"; };
+		949949C517FE5C11418AC51E5EB715F7 /* Pods-Kukushka_iOSSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kukushka_iOSSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A21EB253251551584E1D5D8BAB7FB308 /* Pods-Kukushka_iOSSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kukushka_iOSSDK_Tests-Info.plist"; sourceTree = "<group>"; };
+		A339AAB1D1381B4C01C9D797A3159462 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A60112132DCBB4AEFCED089370B4DEE0 /* Pods_Kukushka_iOSSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kukushka_iOSSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCFECD584C0A524E994585334A308A8 /* Kukushka_iOSSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kukushka_iOSSDK.release.xcconfig; sourceTree = "<group>"; };
+		B7F51E5EE4FE661E28F25F4C90D607EB /* Pods-Kukushka_iOSSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kukushka_iOSSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C18D3CCF82F43319A14471EA7C856BE7 /* Pods-Kukushka_iOSSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kukushka_iOSSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		C614C79560D82DC17AFDA701279E0C42 /* Kukushka_iOSSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kukushka_iOSSDK-prefix.pch"; sourceTree = "<group>"; };
+		D7A8951EAFBED11914B1F315E2E244FF /* Kukushka_iOSSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kukushka_iOSSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3A36CB2C43E5EEDE2B249D7E1404B3 /* Pods_Kukushka_iOSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kukushka_iOSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC61F9872AF4516C00F13101 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DC61F9892AF4618800F13101 /* JSHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSHandler.swift; sourceTree = "<group>"; };
+		DC61F98C2AFBE16100F13101 /* SDKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKError.swift; sourceTree = "<group>"; };
+		DC61F98E2AFBE6F200F13101 /* SurveyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
+		DC61F9912AFC17C000F13101 /* JSResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSResponse.swift; sourceTree = "<group>"; };
+		DC61F9932AFC19E600F13101 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		DC996E5E89ED2B8036DED1669B4FA108 /* Pods-Kukushka_iOSSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kukushka_iOSSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		DFF7E9260200AAB906AEEAB66B9796F0 /* Pods-Kukushka_iOSSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kukushka_iOSSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		E1A3A4FE70BBF88604CB582C701A92B4 /* Pods-Kukushka_iOSSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kukushka_iOSSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24FBB0B0D5ACE935450EAE45E450E803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4B84BDFA9D9CE02CCF41F4CFA0E7BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759D697A9A1618BE874C6924D4B5A816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760764E5655632964CE0C8A9F3FA2C50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A91178544DF61A7455FE1FA1ADB9BA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CDC086DA0E2B67EA97610C5E3978461 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FFDB7FDC3039205F0B9A79BA05B0220 /* Pods-Kukushka_iOSSDK_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				932B99DF0005B5903A2189C40FCFE691 /* Pods-Kukushka_iOSSDK_Tests.modulemap */,
+				5846E273841A191FAF9747364F62277C /* Pods-Kukushka_iOSSDK_Tests-acknowledgements.markdown */,
+				2410C19A72DB82E054A0F4C805C12E69 /* Pods-Kukushka_iOSSDK_Tests-acknowledgements.plist */,
+				C18D3CCF82F43319A14471EA7C856BE7 /* Pods-Kukushka_iOSSDK_Tests-dummy.m */,
+				A21EB253251551584E1D5D8BAB7FB308 /* Pods-Kukushka_iOSSDK_Tests-Info.plist */,
+				919DCC3CB437D5CACCB6FECF6048AE19 /* Pods-Kukushka_iOSSDK_Tests-umbrella.h */,
+				B7F51E5EE4FE661E28F25F4C90D607EB /* Pods-Kukushka_iOSSDK_Tests.debug.xcconfig */,
+				E1A3A4FE70BBF88604CB582C701A92B4 /* Pods-Kukushka_iOSSDK_Tests.release.xcconfig */,
+			);
+			name = "Pods-Kukushka_iOSSDK_Tests";
+			path = "Target Support Files/Pods-Kukushka_iOSSDK_Tests";
+			sourceTree = "<group>";
+		};
+		11836B524A51D58550D642F0F879D58C /* Kukushka_iOSSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DC61F9852AF44DDF00F13101 /* Sources */,
+				33E123088169FAE48BD5605350E2FBD7 /* Pod */,
+				40D796A380752CE6F7546EFF254DB8BF /* Support Files */,
+			);
+			name = Kukushka_iOSSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		19D9921B1D134F5A814C91A87F1B7C59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7A8951EAFBED11914B1F315E2E244FF /* Kukushka_iOSSDK.framework */,
+				DC3A36CB2C43E5EEDE2B249D7E1404B3 /* Pods_Kukushka_iOSSDK_Example.framework */,
+				A60112132DCBB4AEFCED089370B4DEE0 /* Pods_Kukushka_iOSSDK_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33E123088169FAE48BD5605350E2FBD7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D942C06DCBB5B9A76D8FCE0BD5ACE /* Kukushka_iOSSDK.podspec */,
+				2ADC05DEBA839A387F683599583D412B /* LICENSE */,
+				A339AAB1D1381B4C01C9D797A3159462 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		40D796A380752CE6F7546EFF254DB8BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				578DFC1BBDE4A1577EAE3131AF7AE7C1 /* Kukushka_iOSSDK.modulemap */,
+				8ED9CC28DC3966160F5F8E85F5A037A8 /* Kukushka_iOSSDK-dummy.m */,
+				93848EE1123472ACEB952764343A03A6 /* Kukushka_iOSSDK-Info.plist */,
+				C614C79560D82DC17AFDA701279E0C42 /* Kukushka_iOSSDK-prefix.pch */,
+				45CD1666B790DE98B52F9D3CF36670DF /* Kukushka_iOSSDK-umbrella.h */,
+				93BF95F06371022FD6EFA00FC7144318 /* Kukushka_iOSSDK.debug.xcconfig */,
+				AFCFECD584C0A524E994585334A308A8 /* Kukushka_iOSSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Kukushka_iOSSDK";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6E828A5793889C0D9BEBE3F8DE5A2C39 /* Pods-Kukushka_iOSSDK_Example */ = {
+			isa = PBXGroup;
+			children = (
+				938E8B0F6EECC9C5406172098E02D23A /* Pods-Kukushka_iOSSDK_Example.modulemap */,
+				71DDC15CCA34297A107C88C1B74F81E4 /* Pods-Kukushka_iOSSDK_Example-acknowledgements.markdown */,
+				8A0DAF79C517D28C6D909214464BC35C /* Pods-Kukushka_iOSSDK_Example-acknowledgements.plist */,
+				949949C517FE5C11418AC51E5EB715F7 /* Pods-Kukushka_iOSSDK_Example-dummy.m */,
+				2E41D8CFEC1A816BBC625A0A64C4FAFC /* Pods-Kukushka_iOSSDK_Example-frameworks.sh */,
+				31A8F9E5C2CC0507BFA682FE497AAB75 /* Pods-Kukushka_iOSSDK_Example-Info.plist */,
+				DFF7E9260200AAB906AEEAB66B9796F0 /* Pods-Kukushka_iOSSDK_Example-umbrella.h */,
+				9085CB1EBA217AB7AC82297E0EE6201D /* Pods-Kukushka_iOSSDK_Example.debug.xcconfig */,
+				DC996E5E89ED2B8036DED1669B4FA108 /* Pods-Kukushka_iOSSDK_Example.release.xcconfig */,
+			);
+			name = "Pods-Kukushka_iOSSDK_Example";
+			path = "Target Support Files/Pods-Kukushka_iOSSDK_Example";
+			sourceTree = "<group>";
+		};
+		9161B092972C709D0A849CDCEE967703 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E828A5793889C0D9BEBE3F8DE5A2C39 /* Pods-Kukushka_iOSSDK_Example */,
+				0FFDB7FDC3039205F0B9A79BA05B0220 /* Pods-Kukushka_iOSSDK_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				EF12D5D8A92B33DBC324B8DAF7EFBDAB /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				19D9921B1D134F5A814C91A87F1B7C59 /* Products */,
+				9161B092972C709D0A849CDCEE967703 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC61F9852AF44DDF00F13101 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DC61F9902AFC17AE00F13101 /* Models */,
+				DC61F98B2AFBE09400F13101 /* Utils */,
+				DC61F9862AF4514F00F13101 /* General */,
+				DC61F9872AF4516C00F13101 /* Constants.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DC61F9862AF4514F00F13101 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				3FA5C4F6C06105830AF9FC8402C5B48E /* KukushkaSDK.swift */,
+				DC61F98E2AFBE6F200F13101 /* SurveyController.swift */,
+				DC61F9892AF4618800F13101 /* JSHandler.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		DC61F98B2AFBE09400F13101 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DC61F98C2AFBE16100F13101 /* SDKError.swift */,
+				DC61F9932AFC19E600F13101 /* UIViewController+.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DC61F9902AFC17AE00F13101 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC61F9912AFC17C000F13101 /* JSResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF12D5D8A92B33DBC324B8DAF7EFBDAB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11836B524A51D58550D642F0F879D58C /* Kukushka_iOSSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		80151DA9C645E33B64F356482B5A4B5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247934A923FD7051A87F195DEA8F2DA0 /* Pods-Kukushka_iOSSDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD90BD860B9E2C5547B3AA5F83244064 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB0AA7BB9DE5B2AB7EA3673D8556827 /* Kukushka_iOSSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F660ADBE3EE132CF44BC1CCD6AEBD9E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FF37CD489898FFC84B3EC35B3E0069 /* Pods-Kukushka_iOSSDK_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		783F1AF3FC74B8FE223EF247DAB3D6EB /* Pods-Kukushka_iOSSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B32AC3114ADCEDF0CC1E3E6CA20C49 /* Build configuration list for PBXNativeTarget "Pods-Kukushka_iOSSDK_Example" */;
+			buildPhases = (
+				80151DA9C645E33B64F356482B5A4B5E /* Headers */,
+				EF6B4D1D219E9DB5ADE30DAFCD550D5C /* Sources */,
+				24FBB0B0D5ACE935450EAE45E450E803 /* Frameworks */,
+				FBDB0D59AA11A1316EBD528D55064459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				726A372E6929873EA9E7FC4B547C2F9D /* PBXTargetDependency */,
+			);
+			name = "Pods-Kukushka_iOSSDK_Example";
+			productName = Pods_Kukushka_iOSSDK_Example;
+			productReference = DC3A36CB2C43E5EEDE2B249D7E1404B3 /* Pods_Kukushka_iOSSDK_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B2F724DF1A8774476BE7C2DF34DCEE55 /* Kukushka_iOSSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45393A21EF2A4BA7DA8DA0D120E3E977 /* Build configuration list for PBXNativeTarget "Kukushka_iOSSDK" */;
+			buildPhases = (
+				AD90BD860B9E2C5547B3AA5F83244064 /* Headers */,
+				A762EAE9082DDBA1720A3BDDBFFA4B8A /* Sources */,
+				759D697A9A1618BE874C6924D4B5A816 /* Frameworks */,
+				0B2247A50EC5ED3031821BDF53D3C753 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kukushka_iOSSDK;
+			productName = Kukushka_iOSSDK;
+			productReference = D7A8951EAFBED11914B1F315E2E244FF /* Kukushka_iOSSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5752453D488FEE68314036F38F46586 /* Pods-Kukushka_iOSSDK_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5B8916AF75AFAB46249F8C965268430 /* Build configuration list for PBXNativeTarget "Pods-Kukushka_iOSSDK_Tests" */;
+			buildPhases = (
+				F660ADBE3EE132CF44BC1CCD6AEBD9E9 /* Headers */,
+				68C8A05BACE7E473D8AAE025E16EDD21 /* Sources */,
+				7A91178544DF61A7455FE1FA1ADB9BA4 /* Frameworks */,
+				BCBBDAFCBD2BA98017AB8DA109F53D76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7D982C1390F6D5D9F6A722DD265EF64 /* PBXTargetDependency */,
+			);
+			name = "Pods-Kukushka_iOSSDK_Tests";
+			productName = Pods_Kukushka_iOSSDK_Tests;
+			productReference = A60112132DCBB4AEFCED089370B4DEE0 /* Pods_Kukushka_iOSSDK_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 19D9921B1D134F5A814C91A87F1B7C59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2F724DF1A8774476BE7C2DF34DCEE55 /* Kukushka_iOSSDK */,
+				783F1AF3FC74B8FE223EF247DAB3D6EB /* Pods-Kukushka_iOSSDK_Example */,
+				B5752453D488FEE68314036F38F46586 /* Pods-Kukushka_iOSSDK_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B2247A50EC5ED3031821BDF53D3C753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBBDAFCBD2BA98017AB8DA109F53D76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDB0D59AA11A1316EBD528D55064459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68C8A05BACE7E473D8AAE025E16EDD21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF0D6FA95C3B83E43565E6A117C8FC4 /* Pods-Kukushka_iOSSDK_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A762EAE9082DDBA1720A3BDDBFFA4B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC61F98D2AFBE16100F13101 /* SDKError.swift in Sources */,
+				6D30982F3A244CB16F050A3319D52997 /* Kukushka_iOSSDK-dummy.m in Sources */,
+				DC61F9942AFC19E600F13101 /* UIViewController+.swift in Sources */,
+				DC61F9922AFC17C000F13101 /* JSResponse.swift in Sources */,
+				DC61F98A2AF4618800F13101 /* JSHandler.swift in Sources */,
+				DC61F98F2AFBE6F200F13101 /* SurveyController.swift in Sources */,
+				28BBA10B4A65B464F97D37A509240002 /* KukushkaSDK.swift in Sources */,
+				DC61F9882AF4516C00F13101 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6B4D1D219E9DB5ADE30DAFCD550D5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373A496377100646E8A17AA36170AF3B /* Pods-Kukushka_iOSSDK_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		726A372E6929873EA9E7FC4B547C2F9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kukushka_iOSSDK;
+			target = B2F724DF1A8774476BE7C2DF34DCEE55 /* Kukushka_iOSSDK */;
+			targetProxy = 81E7AE45DD78FEB2F21EC21B5FD4AE1A /* PBXContainerItemProxy */;
+		};
+		C7D982C1390F6D5D9F6A722DD265EF64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Kukushka_iOSSDK_Example";
+			target = 783F1AF3FC74B8FE223EF247DAB3D6EB /* Pods-Kukushka_iOSSDK_Example */;
+			targetProxy = 5A0D2655230F83D9DE1846681E325862 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		317C8BED5167057B91EDB6A305ADA0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC996E5E89ED2B8036DED1669B4FA108 /* Pods-Kukushka_iOSSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kukushka_iOSSDK_Example/Pods-Kukushka_iOSSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kukushka_iOSSDK_Example/Pods-Kukushka_iOSSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4683F2C916FCC3BEB6F88ECC35560781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A3A4FE70BBF88604CB582C701A92B4 /* Pods-Kukushka_iOSSDK_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kukushka_iOSSDK_Tests/Pods-Kukushka_iOSSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kukushka_iOSSDK_Tests/Pods-Kukushka_iOSSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		83D3DB761A7B96DF37D2618AE9692275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93BF95F06371022FD6EFA00FC7144318 /* Kukushka_iOSSDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kukushka_iOSSDK/Kukushka_iOSSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kukushka_iOSSDK/Kukushka_iOSSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kukushka_iOSSDK/Kukushka_iOSSDK.modulemap";
+				PRODUCT_MODULE_NAME = Kukushka_iOSSDK;
+				PRODUCT_NAME = Kukushka_iOSSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9156F79CE26FD8A9FF21CCA4CB4B9247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9085CB1EBA217AB7AC82297E0EE6201D /* Pods-Kukushka_iOSSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kukushka_iOSSDK_Example/Pods-Kukushka_iOSSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kukushka_iOSSDK_Example/Pods-Kukushka_iOSSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A336FE7C920C732E3BB8DB6032F61EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7F51E5EE4FE661E28F25F4C90D607EB /* Pods-Kukushka_iOSSDK_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kukushka_iOSSDK_Tests/Pods-Kukushka_iOSSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kukushka_iOSSDK_Tests/Pods-Kukushka_iOSSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B8272B756A23AD30C930195D04FB1562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFCFECD584C0A524E994585334A308A8 /* Kukushka_iOSSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kukushka_iOSSDK/Kukushka_iOSSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kukushka_iOSSDK/Kukushka_iOSSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kukushka_iOSSDK/Kukushka_iOSSDK.modulemap";
+				PRODUCT_MODULE_NAME = Kukushka_iOSSDK;
+				PRODUCT_NAME = Kukushka_iOSSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03B32AC3114ADCEDF0CC1E3E6CA20C49 /* Build configuration list for PBXNativeTarget "Pods-Kukushka_iOSSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9156F79CE26FD8A9FF21CCA4CB4B9247 /* Debug */,
+				317C8BED5167057B91EDB6A305ADA0A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45393A21EF2A4BA7DA8DA0D120E3E977 /* Build configuration list for PBXNativeTarget "Kukushka_iOSSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D3DB761A7B96DF37D2618AE9692275 /* Debug */,
+				B8272B756A23AD30C930195D04FB1562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5B8916AF75AFAB46249F8C965268430 /* Build configuration list for PBXNativeTarget "Pods-Kukushka_iOSSDK_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A336FE7C920C732E3BB8DB6032F61EC7 /* Debug */,
+				4683F2C916FCC3BEB6F88ECC35560781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

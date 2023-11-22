@@ -1,0 +1,22 @@
+{
+  "name": "Kukushka_iOSSDK",
+  "version": "0.1.0",
+  "summary": "A short description of Kukushka_iOSSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sunsay86/Kukushka_iOSSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sunsay86": "t.me/aleksundervolkov"
+  },
+  "source": {
+    "git": "https://github.com/sunsay86/Kukushka_iOSSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Kukushka_iOSSDK/Classes/**/*"
+}

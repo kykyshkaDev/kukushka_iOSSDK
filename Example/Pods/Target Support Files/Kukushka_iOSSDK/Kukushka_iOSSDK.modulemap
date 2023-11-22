@@ -1,0 +1,6 @@
+framework module Kukushka_iOSSDK {
+  umbrella header "Kukushka_iOSSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
