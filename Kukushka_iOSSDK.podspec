@@ -10,6 +10,5 @@ Pod::Spec.new do |s|
   s.social_media_url = ""
   s.ios.deployment_target = '13.0'
   s.source_files  = 'Sources/**/*.{swift,h,m}'
-  s.frameworks = '', ''
   s.swift_version     = "5.0"
 end

@@ -18,6 +18,7 @@
 		8CDC086DA0E2B67EA97610C5E3978461 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		CCB0AA7BB9DE5B2AB7EA3673D8556827 /* Kukushka_iOSSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CD1666B790DE98B52F9D3CF36670DF /* Kukushka_iOSSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC04CE8E2B0FA8B800E78A29 /* Scripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC04CE8D2B0FA8B800E78A29 /* Scripts.swift */; };
+		DC04CE922B0FFA5500E78A29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC04CE912B0FFA5500E78A29 /* UIKit.framework */; };
 		DC61F9882AF4516C00F13101 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61F9872AF4516C00F13101 /* Constants.swift */; };
 		DC61F98A2AF4618800F13101 /* JSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61F9892AF4618800F13101 /* JSHandler.swift */; };
 		DC61F98D2AFBE16100F13101 /* SDKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61F98C2AFBE16100F13101 /* SDKError.swift */; };
@@ -74,6 +75,7 @@
 		C614C79560D82DC17AFDA701279E0C42 /* Kukushka_iOSSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kukushka_iOSSDK-prefix.pch"; sourceTree = "<group>"; };
 		D7A8951EAFBED11914B1F315E2E244FF /* Kukushka_iOSSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kukushka_iOSSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC04CE8D2B0FA8B800E78A29 /* Scripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scripts.swift; sourceTree = "<group>"; };
+		DC04CE912B0FFA5500E78A29 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		DC3A36CB2C43E5EEDE2B249D7E1404B3 /* Pods_Kukushka_iOSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kukushka_iOSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC61F9872AF4516C00F13101 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DC61F9892AF4618800F13101 /* JSHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSHandler.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC04CE922B0FFA5500E78A29 /* UIKit.framework in Frameworks */,
 				760764E5655632964CE0C8A9F3FA2C50 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +227,7 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC04CE912B0FFA5500E78A29 /* UIKit.framework */,
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
@@ -618,9 +622,12 @@
 				PRODUCT_NAME = Kukushka_iOSSDK;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -715,9 +722,12 @@
 				PRODUCT_NAME = Kukushka_iOSSDK;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
