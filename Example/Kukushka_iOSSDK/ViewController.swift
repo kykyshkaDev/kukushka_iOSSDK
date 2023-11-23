@@ -189,7 +189,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITextFieldDelegate {
     
-    private func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    internal func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         // Check if the replacement string contains uppercase characters
         if string.rangeOfCharacter(from: CharacterSet.uppercaseLetters) != nil {
             return false // Do not allow the change
