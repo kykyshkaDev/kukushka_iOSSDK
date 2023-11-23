@@ -24,11 +24,7 @@ final class SurveyWebViewController: UIViewController {
         let preferences = WKPreferences()
         let webConfiguration = WKWebViewConfiguration()
         let userController: WKUserContentController = WKUserContentController()
-        let source = """
-            window.addEventListener('message', function(e) {
-                window.webkit.messageHandlers.iosListener.postMessage(JSON.stringify(e.data));
-            });
-            """
+        let source = JScripts.addEventListener
         let script = WKUserScript(source: source, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
         userController.addUserScript(script)
         userController.add(jsHandler, name: "iosListener")
@@ -42,7 +38,6 @@ final class SurveyWebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
@@ -101,7 +96,8 @@ extension SurveyWebViewController: SurveyViewable {
     }
 
     func show(completion: (() -> Void)? = nil) {
-        UIApplication.shared.windows.first?.rootViewController?.topMostViewController()?.presentFull(self, completion: completion) 
+        self.webView?.evaluateJavaScript(JScripts.timerScript)
+        UIApplication.shared.windows.first?.rootViewController?.topMostViewController()?.presentFull(self, completion: completion)
     }
     
     func hide() {

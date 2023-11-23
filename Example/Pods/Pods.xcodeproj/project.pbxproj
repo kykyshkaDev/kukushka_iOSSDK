@@ -17,6 +17,7 @@
 		760764E5655632964CE0C8A9F3FA2C50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		8CDC086DA0E2B67EA97610C5E3978461 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		CCB0AA7BB9DE5B2AB7EA3673D8556827 /* Kukushka_iOSSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CD1666B790DE98B52F9D3CF36670DF /* Kukushka_iOSSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC04CE8E2B0FA8B800E78A29 /* Scripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC04CE8D2B0FA8B800E78A29 /* Scripts.swift */; };
 		DC61F9882AF4516C00F13101 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61F9872AF4516C00F13101 /* Constants.swift */; };
 		DC61F98A2AF4618800F13101 /* JSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61F9892AF4618800F13101 /* JSHandler.swift */; };
 		DC61F98D2AFBE16100F13101 /* SDKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61F98C2AFBE16100F13101 /* SDKError.swift */; };
@@ -72,6 +73,7 @@
 		C18D3CCF82F43319A14471EA7C856BE7 /* Pods-Kukushka_iOSSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kukushka_iOSSDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		C614C79560D82DC17AFDA701279E0C42 /* Kukushka_iOSSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kukushka_iOSSDK-prefix.pch"; sourceTree = "<group>"; };
 		D7A8951EAFBED11914B1F315E2E244FF /* Kukushka_iOSSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kukushka_iOSSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC04CE8D2B0FA8B800E78A29 /* Scripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scripts.swift; sourceTree = "<group>"; };
 		DC3A36CB2C43E5EEDE2B249D7E1404B3 /* Pods_Kukushka_iOSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kukushka_iOSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC61F9872AF4516C00F13101 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DC61F9892AF4618800F13101 /* JSHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSHandler.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				3FA5C4F6C06105830AF9FC8402C5B48E /* KukushkaSDK.swift */,
 				DC61F98E2AFBE6F200F13101 /* SurveyController.swift */,
 				DC61F9892AF4618800F13101 /* JSHandler.swift */,
+				DC04CE8D2B0FA8B800E78A29 /* Scripts.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				DC61F98D2AFBE16100F13101 /* SDKError.swift in Sources */,
 				6D30982F3A244CB16F050A3319D52997 /* Kukushka_iOSSDK-dummy.m in Sources */,
 				DC61F9942AFC19E600F13101 /* UIViewController+.swift in Sources */,
+				DC04CE8E2B0FA8B800E78A29 /* Scripts.swift in Sources */,
 				DC61F9922AFC17C000F13101 /* JSResponse.swift in Sources */,
 				DC61F98A2AF4618800F13101 /* JSHandler.swift in Sources */,
 				DC61F98F2AFBE6F200F13101 /* SurveyController.swift in Sources */,
