@@ -41,25 +41,21 @@ master?.onSurveyStart = { _ in
     print("[ViewController] onSurveyStart")
 }
 master?.onSurveySuccess = { [weak self] nq in
-    guard let nq, nq else {
-        self?.statusLabel.text = "Последний опрос пройден успешно"
-        return
-    }
-    self?.statusLabel.text = "Пользователь не подошёл под целевую группу последнего опроса"
+    self?.statusLabel.text = "Survey complete"
 }
 master?.onFail = { [weak self] _ in
-    self?.statusLabel.text = "Последний опрос не пройден"
+    self?.statusLabel.text = "Survey not complete"
 }
 master?.onLoadFail = { [weak self] _ in
-    self?.statusLabel.text = "Ошибка загрузки"
+    self?.statusLabel.text = "Loading error"
 }
             
 // Add Preloading Callbacks
 master?.onSurveyAvailable = { [weak self] data in
-    self?.statusLabel.text = "Подходящий опрос найден"
+    self?.statusLabel.text = "An available survey found"
 }
 master?.onSurveyUnavailable = { [weak self] data in
-    self?.statusLabel.text = "Подходящий опрос не найден"
+    self?.statusLabel.text = "No available survey found"
     
 }
 ```
