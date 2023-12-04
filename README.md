@@ -41,7 +41,11 @@ master?.onSurveyStart = { _ in
     print("[ViewController] onSurveyStart")
 }
 master?.onSurveySuccess = { [weak self] nq in
-    self?.statusLabel.text = "Survey complete"
+    guard let nq, nq else {
+        self?.statusLabel.text = "Survey completed"
+        return
+    }
+    self?.statusLabel.text = "User was screened out"
 }
 master?.onFail = { [weak self] _ in
     self?.statusLabel.text = "Survey not complete"
