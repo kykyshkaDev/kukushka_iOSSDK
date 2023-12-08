@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         tf.backgroundColor = .white
         tf.layer.cornerRadius = 8
         tf.placeholder = "Game Key"
-        tf.text = "vIrUgLgPf6rDiAJ0bBpMBwOxAf7W24cXRKyEHSTEXMbYEUZJ8FSRRUbYsiuiubG5"
+        tf.text = "gamedemo"
         tf.textColor = .black
         tf.delegate = self
         tf.textAlignment = .left

@@ -75,9 +75,8 @@ final class SurveyWebViewController: UIViewController {
         
         NSLayoutConstraint.activate(constraints)
 
-//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: .UIKeyboardWillHide, object: nil)
-
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: .UIKeyboardWillHide, object: nil)
     }
 }
 
@@ -116,32 +115,30 @@ extension SurveyWebViewController: UIScrollViewDelegate {
     }
     
 }
-//
-//extension SurveyWebViewController {
-//    @objc
-//    func keyboardWillShow(notification: NSNotification) {
-//        if let keyboardFrame = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-//            guard let webView else { return }
-//            webViewBottomConstraint?.constant = 0//-keyboardFrame.height
-////            webView.scrollView.isScrollEnabled = false
-//            let keyboardHeight = keyboardFrame.height
-//            webView.scrollView.contentInset = UIEdgeInsets(top: keyboardHeight, left: 0, bottom: 0, right: 0)
-//            webView.scrollView.scrollIndicatorInsets = webView.scrollView.contentInset
-////            view.layoutIfNeeded()
-//            
-//        }
-//    }
-//    
-//    @objc
-//    func keyboardWillHide(notification: NSNotification) {
-//        guard let webView else { return }
-//        webViewBottomConstraint?.constant = 0
-////        webView.scrollView.isScrollEnabled = false
-//        webView.scrollView.contentInset = .zero
-//        webView.scrollView.scrollIndicatorInsets = .zero
-////        view.layoutIfNeeded()
-//    }
-//
-//}
-//
+
+extension SurveyWebViewController {
+    @objc
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardFrame = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            guard let webView else { return }
+            webViewBottomConstraint?.constant = 0
+            let keyboardHeight = keyboardFrame.height
+            webView.scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -keyboardHeight, right: 0)
+            webView.scrollView.scrollIndicatorInsets = webView.scrollView.contentInset
+            view.layoutIfNeeded()
+            
+        }
+    }
+    
+    @objc
+    func keyboardWillHide(notification: NSNotification) {
+        guard let webView else { return }
+        webViewBottomConstraint?.constant = 0
+        webView.scrollView.contentInset = .zero
+        webView.scrollView.scrollIndicatorInsets = .zero
+        view.layoutIfNeeded()
+    }
+
+}
+
 
