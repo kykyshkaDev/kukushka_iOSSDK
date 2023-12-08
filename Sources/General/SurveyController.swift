@@ -75,8 +75,9 @@ final class SurveyWebViewController: UIViewController {
         
         NSLayoutConstraint.activate(constraints)
 
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: .UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+
     }
 }
 
@@ -119,7 +120,7 @@ extension SurveyWebViewController: UIScrollViewDelegate {
 extension SurveyWebViewController {
     @objc
     func keyboardWillShow(notification: NSNotification) {
-        if let keyboardFrame = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+        if let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             guard let webView else { return }
             webViewBottomConstraint?.constant = 0
             let keyboardHeight = keyboardFrame.height
