@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Kukushka_iOSSDK'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Survey'
   s.homepage         = 'https://github.com/kykyshkaDev/kukushka_iOSSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
