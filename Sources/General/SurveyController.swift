@@ -77,7 +77,6 @@ final class SurveyWebViewController: UIViewController {
 
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-
     }
 }
 
@@ -114,7 +113,6 @@ extension SurveyWebViewController: UIScrollViewDelegate {
     func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
         scrollView.pinchGestureRecognizer?.isEnabled = false
     }
-    
 }
 
 extension SurveyWebViewController {
@@ -127,7 +125,6 @@ extension SurveyWebViewController {
             webView.scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -keyboardHeight, right: 0)
             webView.scrollView.scrollIndicatorInsets = webView.scrollView.contentInset
             view.layoutIfNeeded()
-            
         }
     }
     
@@ -139,7 +136,6 @@ extension SurveyWebViewController {
         webView.scrollView.scrollIndicatorInsets = .zero
         view.layoutIfNeeded()
     }
-
 }
 
 

@@ -142,11 +142,14 @@ class ViewController: UIViewController {
             
         }
         master?.onSurveySuccess = { [weak self] nq in
-            guard let nq, nq else {
+            switch nq {
+            case 0:
                 self?.statusLabel.text = "Последний опрос пройден успешно"
-                return
+            case 1:
+                self?.statusLabel.text = "Пользователь не подошёл под целевую группу последнего опроса"
+            default:
+                break
             }
-            self?.statusLabel.text = "Пользователь не подошёл под  целевую группу последнего опроса"
         }
         
         master?.onFail = { [weak self] _ in

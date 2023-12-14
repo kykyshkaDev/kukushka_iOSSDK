@@ -23,7 +23,7 @@ enum Constants {
         static let sdkName = "[KukushkaSDK]"
         static var debugMode = false
         //TODO: how to read from .podspec?
-        static let SDKversion = "1.0.0"
+        static let SDKversion = "1.0.3"
     }
     
     

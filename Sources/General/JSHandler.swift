@@ -10,7 +10,7 @@ import WebKit
 
 protocol JSHandlerDelegate: AnyObject {
     func onPageReady()
-    func onSuccess(unq: Bool?)
+    func onSuccess(unq: Int)
     func onJSFail(data: Any?)
     func onJSLoadFail()
     func surveyAvailable()
@@ -43,7 +43,11 @@ final class JSHandler: NSObject {
             case .onPageReady:
                 delegate?.onPageReady()
             case .onSuccess:
-                delegate?.onSuccess(unq: response.surveyMaster.data?.body?.nq)
+                guard let nq = response.surveyMaster.data?.body?.nq else {
+                    print("\(Constants.Environment.sdkName) handle onSuccess error parsing nq")
+                    return
+                }
+                delegate?.onSuccess(unq: nq)
             case .onFail:
                 delegate?.onJSFail(data: response.surveyMaster.data)
             case .onLoadFail:

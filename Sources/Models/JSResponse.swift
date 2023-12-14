@@ -34,7 +34,7 @@ struct SurveyData: Codable {
 }
 
 struct SurveyDataBody: Codable {
-    let nq: Bool?
+    let nq: Int
 }
 
 struct CustomData: Codable {

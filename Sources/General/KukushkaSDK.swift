@@ -5,7 +5,7 @@ public typealias Handler = ((_ data: Any?) -> Void)
 ///
 ///
 ///
-public typealias OnSuccess = ((_ userUnqualified: Bool?) -> Void)
+public typealias OnSuccess = ((_ userUnqualified: Int) -> Void)
 
 
 public protocol SurveyClient {
@@ -169,7 +169,7 @@ extension SurveyMaster: JSHandlerDelegate {
         }
     }
     
-    func onSuccess(unq: Bool?) {
+    func onSuccess(unq: Int) {
         surveyWebViewController?.hide()
         surveyWebViewController = nil
         isPageReady = false
@@ -209,6 +209,5 @@ extension SurveyMaster: JSHandlerDelegate {
             // success 
         }
     }
-    
 }
 
